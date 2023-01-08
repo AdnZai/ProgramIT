@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "module": "none",
+        "target": "es2021"
+    },
+    "include": [
+        "static/*.js",
+        "web/**/*.js"
+    ]
+}

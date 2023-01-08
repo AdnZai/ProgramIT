@@ -1,0 +1,121 @@
+﻿<main>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Rejestracja</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="col mb-2">
+                <input onClick="this.setSelectionRange(0, this.value.length)" class="form-control" id="idImieCreate" name="ImieCreate" data-element="inputImieCreate" placeholder="Imię" />
+            </div>
+            <div class="col mb-2">
+                <input onClick="this.setSelectionRange(0, this.value.length)" class="form-control" id="idNazwiskoCreate" name="NazwiskoCreate" data-element="inputNazwiskoCreate" placeholder="Nazwisko" />
+            </div>
+                <div class="col mb-2">
+                <input onClick="this.setSelectionRange(0, this.value.length)" class="form-control" id="idLoginCreate" name="LoginCreate" data-element="inputLoginCreate" placeholder="Login" />
+            </div>
+                <div class="col mb-2">
+                <input onClick="this.setSelectionRange(0, this.value.length)" type="password" class="form-control" id="idPasswordCreate" name="PasswordCreate" data-element="inputPasswordCreate" placeholder="Hasło" />
+            </div>
+                <div class="col mb-2">
+                <input onClick="this.setSelectionRange(0, this.value.length)" class="form-control" id="idMailCreate" name="MailCreate" data-element="inputMailCreate" placeholder="Adres E-mail"/>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-element="RejUzyt">Zarejestruj</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalForgetPass" tabindex="-1" aria-labelledby="modalForgetPassLabel">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalForgetPassLabel">Przypomnienie danych logowania</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="col mb-2">
+                <input onClick="this.setSelectionRange(0, this.value.length)" class="form-control" id="idMailReset" name="MailReset" data-element="inputMailReset" placeholder="Wprowadź swój adres e-mail"/>
+            </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zamknij</button>
+              <button type="button" class="btn btn-primary" data-bs-dismiss="modal" data-element="ResetPass">Reset hasła</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col mb-3 h1">
+                PROGRAM IT
+            </div>
+        </div>
+        
+        
+          
+        
+       
+           
+          
+          <div class="col mb-3">
+            <div class="input-group">
+                <span class="input-group-text">Login:</span>
+                <input class="form-control" data-element="inputLogin" value=""  />
+            </div>
+        </div>
+            <div class="col mb-3">
+            <div class="input-group"> 
+       
+                <span class="input-group-text">Hasło:</span>
+                <input id="txtInputPass"  type="password" class="form-control"  data-element="inputPassword" onkeydown="goZaloguj()" value=""   />
+               
+              
+                    
+            </div>
+   </div>
+        
+   
+            <div class="input-group"> 
+            <div class="col mb-3">
+                <button id="myBtnZaloguj" class="btn btn-primary" data-element="buttonZaloguj">Zaloguj</button>
+            </div>
+            <div class="IdLogowanie">
+                <button id="myBtnRejestracja" class="btn btn-info" data-element="buttonRejestracja" data-bs-toggle="modal" data-bs-target="#exampleModal">Stwórz konto</button>
+                <button  id="myBtnReset" class="btn btn-link" data-element="buttonReset" data-bs-toggle="modal" data-bs-target="#modalForgetPass">Reset hasła</button>
+            
+        </div>
+        
+   
+        </div>
+       
+  
+    
+        
+
+        <div class="row">
+            <div class="col mb-3" data-element="resultHere">
+            </div>
+        </div>
+        
+    </div>
+    
+   
+    
+ 
+
+
+</main>
+
+
